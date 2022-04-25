@@ -84,3 +84,6 @@ tr {
   padding: 0.4rem;
   text-align: center;
 }
+.list {
+  align-items: center;
+}

@@ -7,8 +7,8 @@ function Pizzas(params) {
   }
   return (
     <div className="resturant-container">
-      <ul className="order-list">
-        <li>
+      <ul className="resturant">
+        <li className="list">
           Pizzas: {Orders}{" "}
           <button
             className="btn btn-primary "

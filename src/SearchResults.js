@@ -3,8 +3,12 @@ import React, { useState } from "react";
 import Data from "./data/fakeBookings.json";
 
 function SearchResults() {
+  const [RowsColor, setRowsColor] = useState("red");
   const [bookings, setBokking] = useState(Data);
   const DisplayData = bookings.map(info => {
+    info.forEach = row => {
+      row.onClick = () => setRowsColor(row.color);
+    };
     return (
       <tr>
         <td>{info.id}</td>
